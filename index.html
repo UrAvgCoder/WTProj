@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<?php
+
+$con = new mysqli("127.0.0.1", "admin", ""); // first parameter = servername, second = username, third = password
+
+if ($con->connect_error) {
+    die("Connection failed: " . $con->connect_error);
+}
+echo "Connected successfully";
+?> 
+<html>
+	<head>
+		<title>ACS Tutorials</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+
+		<!-- Header -->
+			<div id="header">
+				<div class="container">
+						
+					<!-- Logo -->
+						<h2><a href="#" id="logo">ACS Tutorials</a></h2>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">HOME</a></li>
+								<li>
+									<a href="">ABOUT</a>
+									<ul>
+										<li><a href="#">VISION & MISSION</a></li>
+										<li><a href="#">OUR PRICING</a></li>
+										<li>
+											<a href="">CONTACT US</a>
+											<ul>
+												<li><a href="#">INDIRANAGAR, BANGALORE</a></li>
+												<li><a href="#">HEGDENAGAR, BANGALORE</a></li>
+												<li><a href="#">MS PALYA, BANGALORE</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="left-sidebar.html">TUTORING</a></li>
+								<li><a href="right-sidebar.html">FRANCHISE</a></li>
+								<li><a href="no-sidebar.html">VIDEOS</a></li>
+							</ul>
+						</nav>
+
+
+					<!-- Banner -->
+						<div id="banner">
+							<div class="container">
+								<section>
+									<header class="major">
+										<h2>Welcome to ACS Tutorials!</h2>
+										<span class="byline">We at ACS believe excellence can be found only with proper guidance onto the right path! Join us and we will guide your pupil onto the path of excellence!</span>
+									</header>
+									<a href="#" class="button alt">REGISTER</a>
+								</section>			
+							</div>
+						</div>
+
+				</div>
+			</div>
+
+		<!-- Featured -->
+			<div class="wrapper style2">
+				<section class="container">
+					<header class="major">
+						<h2>OUR BRANCHES</h2>
+						<span class="byline">We take tutions at these locations.</span>
+					</header>
+					<div class="row no-collapse-1">
+						<section class="4u">
+							<a href="#" class="image feature"><img src="images/pic02.jpg" alt=""></a>
+							<p>INDIRANAGAR, BANGALORE</p>
+						</section>
+						<section class="4u">
+							<a href="#" class="image feature"><img src="images/pic03.jpg" alt=""></a>
+							<p>HEGDENAGAR, BANGALORE</p>
+						</section>
+						<section class="4u">
+							<a href="#" class="image feature"><img src="images/pic04.jpg" alt=""></a>
+							<p>MS PALYA, BANGALORE</p>
+						</section>
+	
+					</div>
+				</section>
+			</div>
+
+		<!-- Main -->
+			<div id="main" class="wrapper style1">
+				<section class="container">
+					<header class="major">
+						<h2>OUR IDEALS</h2>
+						<span class="byline">We believe that in this fast-paced world, we must return to our roots to find success. We do this by following the academic procedure followed by our ancestors where a GURU used to play a decisive role in mending their child's future. Our tutors wish take on this role and are deeply involved in shaping the future of our students by providing much required in-person attention and guidance.</span>
+					</header>
+					<div class="row">
+					
+						<!-- Content -->
+							<div class="6u">
+								<section>
+									<ul class="style">
+										<li>
+											<span class="fa fa-wrench"></span>
+											<h3>FIX STUDENT'S WEAKNESS</h3>
+											<span>Our tutors are specialised in helping the student to overcome their weaknesses.</span>
+										</li>
+										<li>
+											<span class="fa fa-cloud"></span>
+											<h3>TRACK STUDENT PROGRESS</h3>
+											<span>Track the student's progress by accessing the marksheet and review sheet updated on a weekly basis.</span>
+										</li>
+									</ul>
+								</section>
+							</div>
+							<div class="6u">
+								<section>
+									<ul class="style">
+										<li>
+											<span class="fa fa-cogs"></span>
+											<h3>Integer ultrices</h3>
+											<span>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim.</span>
+										</li>
+										<li>
+											<span class="fa fa-leaf"></span>
+											<h3>Aliquam luctus</h3>
+											<span>Pellentesque viverra vulputate enim. Aliquam erat volutpat. Maecenas condimentum enim tincidunt risus accumsan.</span>
+										</li>
+									</ul>
+								</section>
+							</div>
+
+					</div>
+				</section>
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+
+					<!-- Lists -->
+						<div class="row">
+							<div class="8u">
+								<section>
+									<header class="major">
+										<h2>Donec dictum metus</h2>
+										<span class="byline">Quisque semper augue mattis wisi maecenas ligula</span>
+									</header>
+									<div class="row">
+										<section class="6u">
+											<ul class="default">
+												<li><a href="#">Pellentesque elit non gravida blandit.</a></li>
+												<li><a href="#">Lorem ipsum dolor consectetuer elit.</a></li>
+												<li><a href="#">Phasellus nibh pellentesque congue.</a></li>
+												<li><a href="#">Cras vitae metus aliquam  pharetra.</a></li>
+											</ul>
+										</section>
+										<section class="6u">
+											<ul class="default">
+												<li><a href="#">Pellentesque elit non gravida blandit.</a></li>
+												<li><a href="#">Lorem ipsum dolor consectetuer elit.</a></li>
+												<li><a href="#">Phasellus nibh pellentesque congue.</a></li>
+												<li><a href="#">Cras vitae metus aliquam  pharetra.</a></li>
+											</ul>
+										</section>
+									</div>
+								</section>
+							</div>
+							<div class="4u">
+								<section>
+									<header class="major">
+										<h2>Donec dictum metus</h2>
+										<span class="byline">Mattis wisi maecenas ligula</span>
+									</header>
+									<ul class="contact">
+										<li>
+											<span class="address">Address</span>
+											<span>1234 Somewhere Road #4285 <br />Nashville, TN 00000</span>
+										</li>
+										<li>
+											<span class="mail">Mail</span>
+											<span><a href="#">someone@untitled.tld</a></span>
+										</li>
+										<li>
+											<span class="phone">Phone</span>
+											<span>(000) 000-0000</span>
+										</li>
+									</ul>	
+								</section>
+							</div>
+						</div>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+						</div>
+
+				</div>
+			</div>
+
+	</body>
+</html>
+<?php
+
+$con = new mysqli("127.0.0.1", "admin", ""); // first parameter = servername, second = username, third = password
+
+if ($con->connect_error) {
+    die("Connection failed: " . $con->connect_error);
+}
+echo "Connected successfully";
+?> 
