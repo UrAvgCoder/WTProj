@@ -1,13 +1,5 @@
 <!DOCTYPE HTML>
-<?php
 
-$con = new mysqli("127.0.0.1", "admin", ""); // first parameter = servername, second = username, third = password
-
-if ($con->connect_error) {
-    die("Connection failed: " . $con->connect_error);
-}
-echo "Connected successfully";
-?> 
 <html>
 	<head>
 		<title>ACS Tutorials</title>
@@ -69,7 +61,11 @@ echo "Connected successfully";
 										<h2>Welcome to ACS Tutorials!</h2>
 										<span class="byline">We at ACS believe excellence can be found only with proper guidance onto the right path! Join us and we will guide your pupil onto the path of excellence!</span>
 									</header>
-									<a href="#" class="button alt">REGISTER</a>
+								<!--<p id = "test" onclick = "HELLO()" class="button alt">REGISTER-->
+										<form action="test.php" method="post">
+												
+												<input type="submit" value="submit" onclick="test()" />
+									</form>
 								</section>			
 							</div>
 						</div>
@@ -212,11 +208,17 @@ echo "Connected successfully";
 
 				</div>
 			</div>
-
+			<script>
+			
+				function HELLO() {
+					document.getElementById("test").innerHTML = "SHIT";
+				}
+			</script>
+			
 	</body>
 </html>
-<?php
 
+<?php
 $con = new mysqli("127.0.0.1", "admin", ""); // first parameter = servername, second = username, third = password
 
 if ($con->connect_error) {
