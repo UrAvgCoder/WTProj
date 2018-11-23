@@ -61,10 +61,22 @@
 										<h2>Welcome to ACS Tutorials!</h2>
 										<span class="byline">We at ACS believe excellence can be found only with proper guidance onto the right path! Join us and we will guide your pupil onto the path of excellence!</span>
 									</header>
-								<!--<p id = "test" onclick = "HELLO()" class="button alt">REGISTER-->
-										<form action="test.php" method="post">
-												
-												<input type="submit" value="submit" onclick="test()" />
+									<header class = "major">
+									<h1><?php 
+									$servername = "localhost";
+									$username = "root";
+									$password = "";
+								
+									$conn = new mysqli($servername, $username, $password, "WTDB");
+
+									if ($conn->connect_error) {
+										die("Connection failed: " . $conn->connect_error);
+									}
+									echo "Connected successfully";
+									 ?></h1> </header>
+									
+										<form action="index.php" method="post">
+    										<input type="submit" name="someAction" value="Submit" />
 									</form>
 								</section>			
 							</div>
@@ -218,12 +230,16 @@
 	</body>
 </html>
 
-<?php
-$con = mysqli_connect("localhost","","","WTDB");
+  <?php
 
-// Check connection
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
+
+	
+	// Check connection
+	
+// if ($result = $conn->query("SELECT * FROM logins")) {
+//     printf("Select returned %d rows.\n", $result->num_rows);
+
+//     /* free result set */
+//     $result->close();
+// }
 ?> 
