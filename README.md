@@ -5,4 +5,4 @@
 <li>[22:28] index.html is now deprecated, index.php is used instead
 </ul>
 
-Markup : ![picture alt]([url=https://ibb.co/i2pPQV][img]https://preview.ibb.co/ddkykV/2018-11-23.png[/img][/url] "Current VISUALS as of 23/11/18")
+Markup : ![picture alt](https://preview.ibb.co/ddkykV/2018-11-23.png "Current VISUALS as of 23/11/18")
