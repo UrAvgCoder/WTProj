@@ -7,3 +7,6 @@
 <li>[22:28] Successful connection with XAMPP phpMyAdmin Database - Green for now. </li>
 <li>[22:28] <s>index.html</s> is now deprecated, <i>index.php</i> is used instead.
 </ul>
+
+
+<B> THIS WAS DONE AS A VACATION PROJECT for a SENIOR of mine.</B>
